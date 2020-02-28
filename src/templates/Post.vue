@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <div class="markdown-body">
+      <pre>{{$page.post}}</pre>
       <h1>{{ $page.post.title }}</h1>
+      <g-image :src="$page.post.image" width="500"></g-image>
       <div v-html="$page.post.content" />
     </div>
   </Layout>
