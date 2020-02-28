@@ -2,7 +2,7 @@
   <Layout>
     <div class="markdown-body">
       <h1>{{ $page.post.title }}</h1>
-      <g-image :src="$page.post.image" width="500"></g-image>
+      <g-image v-if="$page.post.image" :src="$page.post.image" width="500"></g-image>
       <div v-html="$page.post.content" />
     </div>
   </Layout>

@@ -37,7 +37,6 @@
         </g-link>
       </li>
     </ul>
-    <!-- <pre>{{$page.posts.edges}}</pre> -->
 
   </Layout>
 </template>

@@ -17,3 +17,12 @@ collections:
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Image", name: "image", widget: "image"}
+  - name: "gallery"
+    label: "Gallery"
+    folder: "gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "title", name: "title", widget: "string"}
+      - {label: "src", name: "src", widget: "image"}
+      - {label: "alt", name: "alt", widget: "string"}
