@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <h1>Gallery</h1>
-    <div
+    <!-- <div
       class="image"
-      v-for="gallery in $page.gallery.edges"
+      v-for="gallery in images"
       :key="gallery.id"
     >
       <g-image
@@ -11,6 +11,36 @@
         :alt="gallery.node.alt"
       >
       </g-image>
+    </div>
+    <pre>{{images}}</pre> -->
+    <div>
+      <div class="image">
+        <g-image src="../../static/uploads/download.png"></g-image>
+      </div>
+      <div class="image">
+        <g-image src="../../static/uploads/download.png"></g-image>
+      </div>
+      <div class="image">
+        <g-image src="../../static/uploads/user.png"></g-image>
+      </div>
+      <div class="image">
+        <g-image src="../../static/uploads/user1.png"></g-image>
+      </div>
+      <div class="image">
+        <g-image src="../../static/uploads/user2.png"></g-image>
+      </div>
+      <div class="image">
+        <g-image src="../../static/uploads/user-male-icon.png"></g-image>
+      </div>
+      <div class="image">
+        <g-image src="../../static/uploads/user-management-2x.png"></g-image>
+      </div>
+      <div class="image">
+        <g-image src="../../static/uploads/man-300x300.png"></g-image>
+      </div>
+      <div class="image">
+        <g-image src="../../static/uploads/download.png"></g-image>
+      </div>
     </div>
 
   </Layout>
@@ -33,11 +63,16 @@ query Gallery {
 export default {
   metaInfo: {
     title: "Gallery"
+  },
+  computed: {
+    images() {
+      return this.$page.gallery.edges;
+    }
   }
 };
 </script>
 <style  scoped>
   .image {
-    margin: 200px;
+    margin: 400px;
   }
 </style>
