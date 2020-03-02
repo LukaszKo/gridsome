@@ -58,6 +58,12 @@ query Posts {
 export default {
   metaInfo: {
     title: "Hello, world!"
+  },
+  async created() {
+    const data = await fetch("/.netlify/functions/hello").then(res =>
+      res.json()
+    );
+    console.log(data);
   }
 };
 </script>
