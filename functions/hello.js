@@ -1,7 +1,9 @@
 exports.handler = function(event, context, cb) {
   cb(null, {
     statusCode: 200,
-    body: "Hello World",
+    body: {
+      text: "Hello World"
+    },
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers":
