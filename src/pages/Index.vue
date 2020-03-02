@@ -58,13 +58,6 @@ query Posts {
 export default {
   metaInfo: {
     title: "Hello, world!"
-  },
-  created() {
-    fetch(
-      "https://vibrant-lovelace-496f72.netlify.com/.netlify/functions/hello"
-    ).then(res => {
-      console.log(res);
-    });
   }
 };
 </script>
