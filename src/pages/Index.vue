@@ -60,10 +60,9 @@ export default {
     title: "Hello, world!"
   },
   async created() {
-    const data = await fetch("/.netlify/functions/hello").then(res =>
-      res.json()
+    fetch("https://vibrant-lovelace-496f72.netlify.com/.netlify/functions/hello").then(res =>
+      console.log(res)
     );
-    console.log(data);
   }
 };
 </script>
