@@ -1,6 +1,6 @@
 <template>
   <div class="w-full max-w-sm rounded overflow-hidden shadow-lg">
-    <g-image src="~/assets/card-top.jpg" class="w-full"/>
+    <g-image :src="post.image" class="w-full"/>
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">{{post.title}}</div>
       <p

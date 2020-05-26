@@ -7,5 +7,6 @@ excerpt: >-
   volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
   Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dap
 date: 2020-02-26T13:44:31.975Z
+image: /uploads/post.jpg
 ---
 # **wow!**
