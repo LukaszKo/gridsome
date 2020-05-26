@@ -1,6 +1,6 @@
 ---
-title: Gallery 2
-src: /uploads/user1.png
+title: Beautiful picture
+src: /uploads/post.jpg
 alt: galerry 2
 ---
 
