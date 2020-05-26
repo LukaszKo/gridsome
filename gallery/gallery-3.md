@@ -1,6 +1,6 @@
 ---
-title: Gallery 3
-src: /uploads/user-management-2x.png
+title: Wow!
+src: /uploads/card-top.jpg
 alt: gallery 3
 ---
 
