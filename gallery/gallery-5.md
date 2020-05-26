@@ -1,6 +1,6 @@
 ---
-title: Gallery 5
-src: /uploads/download (1).png
+title: Amazing!
+src: /uploads/card-top.jpg
 alt: gallery 5
 ---
 
