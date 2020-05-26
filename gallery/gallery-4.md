@@ -1,6 +1,6 @@
 ---
-title: Gallery 4
-src: /uploads/man-300x300.png
+title: Awesome!
+src: /uploads/post.jpg
 alt: gallery 4
 ---
 
