@@ -1,48 +1,18 @@
 <template>
   <Layout>
-    <h1>Gallery</h1>
-    <!-- <div
-      class="image"
-      v-for="gallery in images"
-      :key="gallery.id"
-    >
-      <g-image
-        :src="gallery.node.src"
-        :alt="gallery.node.alt"
-      >
-      </g-image>
-    </div>
-    <pre>{{images}}</pre> -->
-    <div>
-      <div class="image">
-        <g-image src="../../static/uploads/download.png"></g-image>
-      </div>
-      <div class="image">
-        <g-image src="../../static/uploads/download.png"></g-image>
-      </div>
-      <div class="image">
-        <g-image src="../../static/uploads/user.png"></g-image>
-      </div>
-      <div class="image">
-        <g-image src="../../static/uploads/user1.png"></g-image>
-      </div>
-      <div class="image">
-        <g-image src="../../static/uploads/user2.png"></g-image>
-      </div>
-      <div class="image">
-        <g-image src="../../static/uploads/user-male-icon.png"></g-image>
-      </div>
-      <div class="image">
-        <g-image src="../../static/uploads/user-management-2x.png"></g-image>
-      </div>
-      <div class="image">
-        <g-image src="../../static/uploads/man-300x300.png"></g-image>
-      </div>
-      <div class="image">
-        <g-image src="../../static/uploads/download.png"></g-image>
+    <div class="flex mt-12 mb-12">
+      <div class="w-full">
+        <span class="font-medium text-xl">Gallery</span>
+        <hr />
+        <div class="flex flex-wrap mt-20">
+          <div class="w-full md:w-1/3 mx-4" v-for="gallery in images" :key="gallery.id">
+            <g-image :src="gallery.node.src" :alt="gallery.node.alt"></g-image>
+          </div>
+        </div>
       </div>
     </div>
 
+    <pre>{{images}}</pre>
   </Layout>
 </template>
 
@@ -72,7 +42,4 @@ export default {
 };
 </script>
 <style  scoped>
-  .image {
-    margin: 400px;
-  }
 </style>
