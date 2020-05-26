@@ -1,6 +1,6 @@
 ---
-title: Gallery 6
-src: /uploads/user-male-icon.png
+title: So Jealous!
+src: /uploads/post.jpg
 alt: gallery 6
 ---
 
